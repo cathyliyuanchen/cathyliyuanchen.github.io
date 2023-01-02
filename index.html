@@ -6,12 +6,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        padding: 20px;
+      }
+      .left {
+        width: 30%;
+      }
+      .right {
+        width: 70%;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
     
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-4 col-5-large col-12-medium">
+        <div class="column left">
           <span class="image fit"><img src="me.jpg" alt="" /></span>
           <header>
             <h3>Cathy Li</h3>
@@ -20,7 +40,7 @@
             </p>
               <a href=https://www.linkedin.com/in/cathy-li-0>LinkedIn</a>
         </div>
-        <div class="col-8 col-7-large col-12-medium">
+        <div class="column right">
           <section>
             <h1> About </h1>
             
@@ -31,7 +51,8 @@
             <h2> Education </h2>
             
               B.A. in Computer Science, Statistics, Applied Mathematics, Cognitive Science, Linguistics, and Data Science <br>
-            <i> University of California, Berkeley (2017.8 - 2020.12, magna cum laude)  </i>
+              <i> magna cum laude </i><br>
+              University of California, Berkeley (2017.8 - 2020.12)
             </p>
                         <a href=more.html>More about this</a>
             
